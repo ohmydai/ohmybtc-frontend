@@ -1,0 +1,62 @@
+{
+  "name": "ohmydai-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
+    "bn.js": "^5.0.0",
+    "classnames": "^2.2.6",
+    "ethereum-connect-button": "^1.0.1",
+    "evergreen-ui": "^4.21.5",
+    "normalize.css": "^8.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-ga": "^2.7.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "react-toastify": "^5.4.1",
+    "react-tooltip": "^3.11.1",
+    "styled-components": "^4.4.1",
+    "web3": "^1.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:ci": "CI=true react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn lint && yarn test:ci"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "node-sass": "^4.13.0",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "globals": [
+      "it",
+      "fetch"
+    ]
+  }
+}

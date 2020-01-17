@@ -1,0 +1,45 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.questionBox {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "AvenirNext-Bold", sans-serif;
+  width: 100%;
+  align-items: center;
+  line-height: 60px;
+  font-size: 45px;
+}
+
+.questiontext {
+  line-height: 70px;
+
+  &:first-child {
+    margin-bottom: 15px;
+  }
+}
+
+.detailtext {
+  color: white;
+  font-family: "AvenirNext-Regular", sans-serif;
+  font-size: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.variabletext {
+  font-family: "AvenirNext-Bold", sans-serif;
+}
+
+.inputcontainer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  width: 100%;
+}

@@ -1,0 +1,126 @@
+@import "../../layout/variables.scss";
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: #1e1f23;
+  flex-grow: 1;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  padding-top: 15vh;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media only screen and (max-width: $screen-sm-min) {
+    max-width: 440px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+}
+
+.title {
+  color: white;
+  line-height: normal;
+  font-size: 45px;
+  margin-bottom: 60px;
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+
+  @media only screen and (max-width: $screen-sm-min) {
+    font-size: 40px;
+  }
+}
+
+.titlerow {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: white;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mainbutton {
+  background: linear-gradient(to bottom, #395737, #5c9e54);
+  border-radius: 28px;
+  width: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  height: 130px;
+  font-weight: bold;
+  margin-bottom: auto;
+
+  &:first-child {
+    border-right: 1px solid white;
+  }
+
+  a {
+    color: white;
+    height: 65%;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @media only screen and (max-width: $screen-sm-min) {
+    width: 100%;
+  }
+}
+
+.buttonoption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  justify-content: space-around;
+  color: white;
+  font-size: 25px;
+
+  &:first-child {
+    border-right: solid 2px white;
+  }
+  a {
+    color: white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.detailtext {
+  font-size: 15px;
+}
+
