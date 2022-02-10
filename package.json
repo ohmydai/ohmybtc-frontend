@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "husky": "^3.1.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "standard": "^14.3.1"
   },
   "standard": {
